@@ -20,9 +20,22 @@ html {
 .text-center {
     text-align: center !important;
 }
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
 .row {
     margin-left: -8px;
     margin-right: -8px;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 .col {
     float: left;
@@ -37,6 +50,10 @@ html {
 .col-third {
     width: 33.333%;
 }
+.col-full{
+    width: 100%;
+}
+
 
 /* 
 1: vị trí
@@ -341,6 +358,33 @@ i.ti-bag {
 .modal-btn:hover {
     opacity: 0.9;
     cursor: pointer;
+}
+    /* contact form */
+
+.contact-content {
+    margin-top: 48px;
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.4;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+
+}
+.contact-form {
+ font-size: 15px;
+}
+.contact-form .form-control {
+    width: 100%;
+    padding: 9px;
+}
+.contact-form .form-submit-btn {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
 }
 .modal-help {
     padding: 0 16px 16px 0;
