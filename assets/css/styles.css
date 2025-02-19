@@ -27,6 +27,23 @@ html {
 .mt-16 {
     margin-top: 16px !important;
 }
+.pull-right {
+    float: right !important;
+}
+.btn {
+    width: 108px;
+    height: 38px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: none;
+ }
+ .btn:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+ }
 
 .row {
     margin-left: -8px;
@@ -164,8 +181,7 @@ background: url('/assets/img/slider/slider1.png') top center / cover no-repeat;
 }
 #content .content-section {
     width: 800px;
-    padding: 64px 16px;
-    margin: 0 75px;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 
@@ -204,6 +220,7 @@ background: url('/assets/img/slider/slider1.png') top center / cover no-repeat;
     border-radius: 4px;
 }
 .tour-section {
+    margin-top: 100px;
    left: 0;
    right: 0;
     background-color: #000;
@@ -271,18 +288,6 @@ background: url('/assets/img/slider/slider1.png') top center / cover no-repeat;
 .place-desc {
     margin: 15px 0;
     line-height: 1.4;
-}
-.place-buy-btn {
-   width: 108px;
-   height: 38px;
-   background-color: #000;
-   color: #fff;
-   padding: 8px 16px;
-   text-decoration: none;
-}
-.place-buy-btn:hover {
- color: #000;
- background-color: #ccc;
 }
 
 #footer {
@@ -386,6 +391,10 @@ i.ti-bag {
     padding: 10px 16px;
     float: right;
 }
+.map-section img {
+    width: 100%;
+}
+
 .modal-help {
     padding: 0 16px 16px 0;
     text-align: right;
@@ -393,6 +402,35 @@ i.ti-bag {
 .modal.open {
     display: flex;
 }
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .social-list {
+    font-size: 24px;
+    color: rgba(0, 0,0, 0.6);
+    text-decoration: none;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0,0,0.6);
+    text-decoration: none;
+}
+#footer .social-list a:hover {
+    color: rgba(0, 0,0,0.3);
+}
+#footer .copyright {
+    color: rgba(0, 0,0,0.6);
+}
+
+#footer .copyright a {
+    color: rgba(0, 0,0,0.6);
+}
+#footer .copyright a:hover {
+    color: rgba(0, 0,0,0.3);
+}
+
 @keyframes modalFadeIn {
     from {
         transform: translateY(-103px);
